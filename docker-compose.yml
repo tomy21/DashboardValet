@@ -19,7 +19,7 @@ services:
     image: nginx
     container_name: nginx_dashboard
     ports:
-      - "8006:8006"
+      - "8070:8070"
 
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
