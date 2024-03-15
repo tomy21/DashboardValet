@@ -8,9 +8,9 @@ services:
       - .:/app
       - node_modules:/app/node_modules
     environment:
-      - PORT=3000
+      - PORT=3005
     ports:
-      - "8001:3000"
+      - "8001:3005"
     command: npm start
     networks:
       - backend_network
