@@ -39,7 +39,6 @@ const LineChart = ({ width, height, activeButton, dateFilter }) => {
           const selectedDate = DateTime.fromJSDate(dateFilter);
           const year = selectedDate.year;
           reportData = await reportYearly(year);
-          console.log(reportData);
         } else {
           reportData = await reportDaily(formattedDate);
         }

@@ -10,7 +10,7 @@ function Captcha() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     initializeCaptcha(ctx);
-  }, []);
+  });
 
   const generateRandomChar = (characters) =>
     characters.charAt(Math.floor(Math.random() * characters.length));

@@ -35,14 +35,6 @@ export default function TransactionLocations({ activeButton, dateFilter }) {
     };
     fetchData();
   }, [activeButton, dateFilter]);
-  console.log(listTrx);
-  // const formatRupiah = (amount) => {
-  //   // Convert the amount to Indonesian Rupiah currency format
-  //   return new Intl.NumberFormat("id-ID", {
-  //     style: "currency",
-  //     currency: "IDR",
-  //   }).format(amount);
-  // };
 
   return (
     <div className="relative w-[26vw] h-full border-gray-300 border rounded-md px-2 py-1 flex flex-col">

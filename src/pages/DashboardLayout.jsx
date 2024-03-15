@@ -39,7 +39,8 @@ export default function DashboardLayout() {
       <input
         type="text"
         ref={ref}
-        value={value}
+        // value={value}
+        defaultValue={value}
         onClick={onClick}
         className="border border-gray-300 text-start text-xs items-center w-40 pl-8 pr-3 py-1 rounded-md"
       />
