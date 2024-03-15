@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllUsers = async (search, page, limit) => {
   try {
     const response = await axios.get(
-      `http://localhost:3003/api/getUsers?page=${page}&search=${search}&limit=${limit}`
+      `http://147.139.135.195:8090/api/getUsers?page=${page}&search=${search}&limit=${limit}`
     );
     console.log("data", response);
     return response.data;

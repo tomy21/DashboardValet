@@ -2,7 +2,9 @@ import axios from "axios";
 
 export const location = async () => {
   try {
-    const response = await axios.get("http://localhost:3003/api/location");
+    const response = await axios.get(
+      "http://147.139.135.195:8090/api/location"
+    );
     const responseData = response.data;
     return responseData;
   } catch (err) {
@@ -19,7 +21,7 @@ export const allTrxValet = async (
 ) => {
   try {
     const response = await axios.get(
-      `http://localhost:3003/api/transactionsValet?page=${page}&limit=${limit}&sortBy=${sortBy}&sortDirection=${sortDirection}&search=${search}`
+      `http://147.139.135.195:8090/api/transactionsValet?page=${page}&limit=${limit}&sortBy=${sortBy}&sortDirection=${sortDirection}&search=${search}`
     );
     const responseData = response.data;
     return responseData;
@@ -31,7 +33,7 @@ export const allTrxValet = async (
 export const reportDaily = async (dateFilter) => {
   try {
     const response = await axios.get(
-      `http://localhost:3003/api/dailyreport?date=${dateFilter}`
+      `http://147.139.135.195:8090/api/dailyreport?date=${dateFilter}`
     );
     const responseData = response.data;
     return responseData;
@@ -42,7 +44,7 @@ export const reportDaily = async (dateFilter) => {
 export const reportMonthly = async (month) => {
   try {
     const response = await axios.get(
-      `http://localhost:3003/api/monthlyreport?month=${month}`
+      `http://147.139.135.195:8090/api/monthlyreport?month=${month}`
     );
     const responseData = response.data;
     return responseData;
@@ -53,7 +55,7 @@ export const reportMonthly = async (month) => {
 export const reportYearly = async (year) => {
   try {
     const response = await axios.get(
-      `http://localhost:3003/api/yearlyreport?year=${year}`
+      `http://147.139.135.195:8090/api/yearlyreport?year=${year}`
     );
     const responseData = response.data;
     return responseData;
@@ -64,7 +66,7 @@ export const reportYearly = async (year) => {
 export const jsonDataTrx = async (startDate, endDate) => {
   try {
     const response = await axios.get(
-      `http://localhost:3003/api/exportDailyData?startDate=${startDate}&endDate=${endDate}`
+      `http://147.139.135.195:8090/api/exportDailyData?startDate=${startDate}&endDate=${endDate}`
     );
     const responseData = response.data;
     return responseData;

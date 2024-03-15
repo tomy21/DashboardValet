@@ -82,7 +82,7 @@ export default function Login() {
           key
         ).toString();
         const response = await axios.post(
-          "http://localhost:3003/api/login",
+          "http://147.139.135.195:8090/api/login",
           {
             data: encrypData,
           },

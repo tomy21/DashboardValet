@@ -18,7 +18,7 @@ const AddUsers = ({ isOpen, onClose }) => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3003/api/registerUser",
+        "http://147.139.135.195:8090/api/registerUser",
         {
           roleId: role,
           name: name,
