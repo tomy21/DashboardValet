@@ -181,7 +181,7 @@ export default function Login() {
                 ></canvas>
                 <button
                   id="reload-button"
-                  className="bg-emerald-600 rounded-md px-4 hover:bg-emerald-700"
+                  className="bg-emerald-600 rounded-md px-4 text-white hover:bg-emerald-700"
                   onClick={() =>
                     initializeCaptcha(canvasRef.current.getContext("2d"))
                   }
