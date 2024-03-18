@@ -10,7 +10,7 @@ services:
     environment:
       - PORT=3005
     ports:
-      - "8001:3005"
+      - "80:3005"
     command: npm start
     networks:
       - backend_network
@@ -19,7 +19,7 @@ services:
     image: nginx
     container_name: nginx_dashboard
     ports:
-      - "8070:8070"
+      - "80:80"
 
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
